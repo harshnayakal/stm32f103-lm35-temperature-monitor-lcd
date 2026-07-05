@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_stm32f10x_md.o"
+".\main.o"
+".\system_stm32f10x.o"
+--strict --scatter ".\STM32F103-LM35-Temperature-Monitor.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\STM32F103-LM35-Temperature-Monitor.map" -o .\STM32F103-LM35-Temperature-Monitor.axf
